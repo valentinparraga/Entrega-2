@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Staatliches&display=swap');
+
+:root{
+    --primary: #C61823;
+    --secondary: #FDF3F4;
+    --third: #EC656E;
+    --shadow: #000000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Staatliches", sans-serif;
+}   
+
+body{
+    background-color: var(--primary);
+}
+
+header a{
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+header img{
+    width: 75px;
+    height: auto;
+}
+
+.navbar{
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 65px;
+    height: 65px;
+    width: 100%;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+}
