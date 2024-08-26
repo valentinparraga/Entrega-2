@@ -41,7 +41,6 @@ footer{
     flex-direction: column;
     align-items: center;
     color: var(--secondary);
-    padding: 15px;
     font-size: 15px;
     background-color: #380000;
 }
