@@ -1,63 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Padlock Productions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-    <link rel="icon" href="/Assets-E2/favicon-16x16.png">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" href="/Assets-E2/favicon-16x16.png" />
+  </head>
+  <body>
     <!--HEADER-->
     <header class="navbar">
-        <img class="logo" src="Assets-E2/logo.png" alt="Logo">
-        <nav>
+      <img class="logo" src="Assets-E2/logo.png" alt="Logo" />
+      <nav>
         <ul class="navbar-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Contacto</a></li>
+          <li><a href="#" class="navbar-item" >Inicio</a></li>
+          <li><a href="#" class="navbar-item" >Servicios</a></li>
+          <li><a href="#" class="navbar-item" >Clientes</a></li>
+          <li><a href="#" class="navbar-item" >Contacto</a></li>
         </ul>
-        </nav>
+      </nav>
     </header>
 
     <!--MAIN-->
     <main class="hero">
-        <div class="info-container">
-            <div class="text-container">
-                <h3 class="main-text"> La creación de videos ya no es un problema </h3>
-                <span class="sub-text">
-                  Llegaste a esta página porque el destino así lo quiso.
-                </span>
-            </div>
-            <div class="btn-container">
-                <button class="my-work"> Mi trabajo </button>
-                <button class="contact-me"> Contactame </button>
-            </div>
+      <div class="info-container">
+        <div class="text-container">
+          <h3 class="main-text">La creación de videos ya no es un problema</h3>
+          <span class="sub-text">
+            Llegaste a esta página porque el destino así lo quiso.
+          </span>
         </div>
+        <div class="btn-container">
+          <button class="hero-btn"><a href="https://www.behance.net/valentinparraga" target="_blank">Mi trabajo</a></button>
+          <button class="hero-btn">Contactame</button>
+        </div>
+      </div>
 
-        <div class="img-container">
-            <img src="/Assets-E2/timeline.jpg" alt="Timeline de Adobe Premiere Pro" class="main-timeline">
-        </div>
-
-        <div class="short-extra-info">
-            <h3>
-                Acá iría una descripción más detallada pero como estoy entregando a último momento y no sé bien que poner, dejo un lorem a modo de ejemplo.
-            </h3>
-            <h5>
-                PD: para la próxima entrega le agrego transiciones a los botones ;)
-            </h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Mollitia, qui laborum. Nihil corrupti fugiat esse asperiores voluptates quibusdam laudantium eius quod,
-                  possimus ipsum labore molestiae.
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Mollitia, qui laborum. Nihil corrupti fugiat esse asperiores voluptates quibusdam laudantium eius quod,
-                     possimus ipsum labore molestiae.
-                    </p>
-        </div>
+      <div class="img-container">
+        <img
+          src="/Assets-E2/timeline-2.jpg"
+          alt="Timeline de Adobe Premiere Pro"
+          class="main-timeline"
+        />
+      </div>
     </main>
 
-    <footer> Hecho por Valentin Párraga </footer>
-</body>
+    <div class="cards">
+      <div class="short-extra-info">
+        <p>Productora audiovisual imaginaria. Soy editor de video y se me ocurrió hacer una página para una productora que no existe, pero en algún futuro quizás si.</p>
+      </div>
+
+      <h2>Nuestros servicios</h2>
+      <span>
+        Trabajamos arduamente para brindarte las mejores creaciones
+      </span>
+
+      <div class="cards-container">
+        <div class="card">
+          <i class="fa-solid fa-video"></i>
+          <h4 class="card-title">Filmación</h4>
+          <p class="card-text">Realizamos videos de primer nivel en calidad 4K</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-clapperboard"></i>
+          <h4 class="card-title">Edición</h4>
+          <p class="card-text">Contamos con equipo especializado en postproducción</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-camera"></i>
+          <h4 class="card-title">Fotografía</h4>
+          <p class="card-text">Capacitados para elevar tu imagen</p>
+        </div>
+
+      </div>
+    </div>
+
+    <h3 class="contacto__title"> Dejame tu mensaje </h3>  
+    <div class="contacto">
+        <div class="contacto__data">
+          <p class="contacto__data-name"> Valentin Párraga </p>
+          <p class="contacto__data-country"> Ensenada, Argentina </p>
+          <p class="contacto__data-number"> +54 9 123-4567 </p>
+        </div>
+        
+        <div>
+          <form action="submit" target="_blank" class="contacto__form">
+
+            <label for="mensaje"></label>
+            <textarea name="mensaje" id="mensaje">Contame tu proyecto</textarea> 
+
+            <button class="form__button" type="submit">Enviar</button>
+          </form>
+        </div>
+    </div>
+
+    <footer>
+      <div class="footer-btns">
+        <a href="https://www.instagram.com/valen.parraga" target="_blank"> <img src="./Assets-E2/ig-icon.png"> </a>
+        <a href="https://www.behance.net/valentinparraga" target="_blank"> <img src="./Assets-E2/behance-icon.png"></a>
+      </div>
+      Hecho por Valentin Párraga
+    </footer>
+  </body>
 </html>

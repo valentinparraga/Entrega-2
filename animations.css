@@ -1,0 +1,105 @@
+.navbar-item:hover{
+    font-size:xx-large;
+    color: #C61823;
+}
+
+.card:hover{
+    background-color: #6e0009;
+}
+
+/*TRANSICIONES*/
+/*para el navbar*/
+@keyframes nav-ease{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{       
+        opacity: 100%;
+    }
+}
+
+header{
+    animation: nav-ease 0.5s ease-in;
+    -webkit-animation: nav-ease 0.5s ease-in;
+}
+
+/*para el texto y los botones*/
+@keyframes hero-ease-left{
+    0%{
+        position: relative;
+        right: 100%
+    }
+    50%{
+        position: relative;
+        right: 50%
+    }
+    100%{
+        position: relative;
+        right: 0%
+    }
+}
+
+.info-container{
+    animation: hero-ease-left 0.6s ease-in-out;
+    -webkit-animation: hero-ease-left 0.6s ease-in-out;
+}
+
+/*para la imagen*/
+@keyframes hero-ease-right{
+    0%{
+        position: relative;
+        left: 100%
+    }
+    50%{
+        position: relative;
+        left: 50%
+    }
+    100%{
+        position: relative;
+        left: 0%
+    }
+}
+
+.img-container{
+    animation: hero-ease-right 0.5s ease-in;
+    -webkit-animation: hero-ease-right 0.5s ease-in;
+}
+
+/*para las cards*/
+@keyframes cards-scale{
+    0%{
+        opacity: 0%;
+        z-index: -4;
+        scale: 0%;
+    }
+    25%{
+        opacity: 25%;
+        z-index: -3;
+        scale: 25%;
+    }
+    50%{
+        opacity: 50%;
+        z-index: -2;
+        scale: 50%;
+    }
+    75%{
+        opacity: 75%;
+        z-index: -1;
+        scale: 75%;
+    }
+    100%{
+        opacity: 100%;
+        z-index: 0;
+        scale: 100%;
+    }
+}
+
+.cards,
+.contacto
+.contacto__title{
+    animation: cards-scale 1.2s ease-out;
+    -webkit-animation: cards-scale 1.2s ease-out;
+}
